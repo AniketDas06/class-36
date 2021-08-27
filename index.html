@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Zen</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/player.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-database.js"></script>
+
+
+    <script>
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+  apiKey: "AIzaSyBaOxR7cyS_gPuqdqLS2Zi3--YtY1ez1S0",
+  authDomain: "multiplayer-racer-game-7a5fd.firebaseapp.com",
+  databaseURL: "https://multiplayer-racer-game-7a5fd-default-rtdb.firebaseio.com",
+  projectId: "multiplayer-racer-game-7a5fd",
+  storageBucket: "multiplayer-racer-game-7a5fd.appspot.com",
+  messagingSenderId: "625929714493",
+  appId: "1:625929714493:web:16cb82d2d4546c3a8c2354"
+};
+
+// Initialize Firebase
+//const app = initializeApp(firebaseConfig);
+      //add here
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+  </body>
+</html>
